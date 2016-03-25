@@ -1,0 +1,17 @@
+cd ..
+robot=robotJava
+robot.SetTraceFileOn(1);
+robot.LaunchBatch()
+
+robot.StartTimeoutManagement
+
+robot.NorthAlign(0)
+robot.GetRetcode(6,1,2)
+
+robot.GetRetcode(1,1,2)
+
+robot.GetNorthOrientation()
+
+robot.LaunchBatch()
+
+robot.UpdateHardRobotLocation()
