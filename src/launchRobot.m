@@ -84,7 +84,6 @@ while (issue==false && targetReached==false)
 			issue=true
 		endif
 
-	%	sleep(3);
 		if (robot.GetHardPosX==newX && robot.GetHardPosY==newY && robot.GetHardAngle==floor(newAngle))
 				if (abs(targetX-robot.GetHardPosX)<=10 && abs(targetY-robot.GetHardPosY)<=10)
 					targetReached=true;
@@ -99,11 +98,18 @@ while (issue==false && targetReached==false)
 		ready=yes_or_no(" ok ?")
 	end 
 					[rotationToDo,lenToDo]=ComputeMoveToDo(robot.GetHardPosX,robot.GetHardPosY,robot.GetHardAngle,nextX,nextY);
+					printf("robot move rotation:%d len:%d . \n",rotationToDo,lenToDo*10)
+					retCode=9;
 					robot.Move(rotationToDo,lenToDo*10);  % len sent in mm
-					MoveParticles(rotationToDo,lenToDo*10,plotOn);
-					while (robot.GetRunningStatus()!=105)
-					sleep(1);
+					MoveParticles(rotationToDo,lenToDo,plotOn);
+					while (retCode==9)
+						retCode=robot.GetRetcode(4,1,2);
+						printf("robot retcode: %d. \n",retCode);
+						sleep(1)
 					end
+%					while (robot.GetRunningStatus()!=105)
+%					sleep(1);
+%					end
 					robot.SetPosX(robot.GetHardPosX());
 					robot.SetPosY(robot.GetHardPosY());
 					robot.SetAlpha(robot.GetHardAngle());

@@ -3,3 +3,64 @@ lastid:0 0 0
 actualise:0
 x:0 Y:0 orient:0
  Start
+align to:268
+633445010c00000000000000000000
+6 9 1 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+6 9 1 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+6 9 1 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+6 0 1 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+echo
+scan
+target location0 0 0 0 0
+INSERT INTO scanResult VALUES (0,now(),0,0,0,142,102,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,13,132,104,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,26,130,91,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,38,130,80,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,51,126,59,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,64,124,52,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,76,100,51,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,90,100,49,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,103,127,48,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,116,128,48,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,128,235,50,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,141,107,192,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,154,107,158,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,166,103,142,0,1)
+INSERT INTO scanResult VALUES (0,now(),0,0,180,103,142,0,1)
+echo

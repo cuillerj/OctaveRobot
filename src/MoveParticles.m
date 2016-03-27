@@ -14,7 +14,7 @@ endfor
 save ("-mat4-binary","particles.mat","particles")
 if (plotOn)
 	figure();
-	title ("particles");
+	title ("particles moved");
 	hold on;
 	for i=1:x
 		plot(particles(i,1),particles(i,2))
